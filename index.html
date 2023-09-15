@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive card details</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+        <section class="bkground">
+            <div class="card-images">
+                <div class="font">
+                    <div class="font-logo">
+                    <img src="./images/card-logo.svg" alt="" srcset="" >
+                    <span class="circle"></span>
+                    </div>
+                    <div class="font-name-date-num">
+                        <span id="fnt-num">1234 5678 9123 0000</span>
+                        <div class="font-name-date">
+                            <span id="name" class="name-date">FELICIA LEIRE</span>
+                            <span id="date" class="name-date">09/10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                        <div class="back-cvc">
+                            <span id="bk-cvc">123</span>
+                            </div>
+                </div> 
+            </div>
+        </section>
+            <form class="form-validation">
+            <label for="name">CARDHOLDER NAME</label>
+            <input type="text" name="" id="card-name" placeholder="e.g JANE APPLEASED" class="input-one">
+            <label for="name">CARD NUMBER</label>
+            <input type="number" id="card-number" placeholder="e.g 1234 5678 9123 0000" class="input-one">
+           <div class="card-label">
+            <label for="name">EXP. DATE(MM/YY)</label>
+            <label for="name">CVC</label>
+           </div>
+            <div class="card-expire">
+                <input type="number" placeholder="MM"  class="input-two" id="mnth">
+                <input type="number" placeholder="YY" class="input-two" id="year">
+                <input type="number" placeholder="e.g 123"  class="input-three" id="cvc">
+            </div>
+            <div class="btn">
+                <button type="submit">Confirm</button>
+            </div>
+        </div>
+        <div class="popover">
+            <h2>YOUR CARD HAS BEEN ADDED SUCCESSFULLY</h2><br>
+            <button type="reset" onclick="removeAdd()" class="btn-one">Continue</button>
+    </div>
+    </form>
+    </div>
+    </main>
+  <script src="script.js"></script>  
+</body>
+</html>
